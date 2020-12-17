@@ -1,24 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~       http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  ~
-  -->
+<?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
 
 
@@ -42,7 +29,7 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp">
+                    android:layout_marginBottom="20dp">
 
                     <TextView
                         android:layout_height="wrap_content"
@@ -55,6 +42,7 @@
 
                     <Spinner
                         android:id="@+id/sp_need_want"
+                        android:background="@drawable/spinner_back"
                         android:layout_marginLeft="100dp"
                         android:layout_marginStart="100dp"
                         android:layout_marginRight="40dp"
@@ -87,6 +75,7 @@
                         <!-- 全天/時段 -->
                         <Spinner
                             android:id="@+id/sp_need_time1"
+                            android:background="@drawable/spinner_back"
                             android:layout_marginLeft="100dp"
                             android:layout_marginStart="100dp"
                             android:layout_marginRight="40dp"
@@ -95,8 +84,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
 
-                        <!-- 全天/時段 -->
+                        <!-- 看你要新增什麼w -->
                         <Spinner
+                            android:background="@drawable/spinner_back"
                             android:id="@+id/sp_need_time2"
                             android:layout_marginLeft="100dp"
                             android:layout_marginStart="100dp"
@@ -110,51 +100,158 @@
 
                 </FrameLayout>
 
-
-
-
-                <!-- 時間: 全天/時段 -->
-                <Spinner
-                    android:id="@+id/sp_time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-
-
-                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
-                    android:id="@+id/need_time"
-                    style="@style/InfoItem.Account"
-                    android:layout_marginTop="20dp"
-                    app:sLeftTextString="@string/title_time" />
-
-                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
-                    android:id="@+id/need_place"
-                    style="@style/InfoItem.Account"
-                    app:sLeftTextString="@string/title_place" />
-
-
-                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
-                    style="@style/InfoItem.Account"
-                    app:sDividerLineType="none"
-                    app:sLeftTextString="@string/title_money" />
-
-                <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
-                    android:id="@+id/menu_settings"
-                    style="@style/InfoItem.Account.NoEdit"
-                    android:layout_marginTop="20dp"
-                    app:sLeftTextString="@string/title_else" />
-
-                <com.xuexiang.xui.widget.edittext.MultiLineEditText
-                    android:id="@+id/edt_order_note_text"
+                <!-- 地點: 自家/保母家 -->
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:minLines="5"
-                    android:gravity="top"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp"/>
+                    android:layout_marginBottom="20dp">
 
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/title_place"
+                        android:textColor="@color/title"
+                        android:textSize="24sp" />
 
+                    <Spinner
+                        android:id="@+id/sp_need_place"
+                        android:background="@drawable/spinner_back"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </FrameLayout>
+
+                <!-- 薪資: -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/title_money"
+                        android:textColor="@color/title"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <!-- 薪資: 時薪/日薪 -->
+                    <Spinner
+                        android:id="@+id/sp_need_money_dh"
+                        android:background="@drawable/spinner_back"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edt_need_money"
+                            android:background="@drawable/edittext_back"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginEnd="40dp"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:gravity="top"
+                            android:hint="請填入數字"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!-- 我要找: 保母/寶寶 -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/title_else"
+                        android:textColor="@color/title"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/edt_order_note_text"
+                        android:background="@drawable/edittext_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:padding="5dp"
+                        android:minLines="5"
+                        android:gravity="top"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:hint="若有其他需求，可於此描述"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_save_need"
+                        android:layout_height="wrap_content"
+                        android:layout_width="64dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/title"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/lab_save" />
+
+                    <!-- 若為上架中 則改下架 -->
+                    <Button
+                        android:id="@+id/btn_upload"
+                        android:layout_height="wrap_content"
+                        android:layout_width="64dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/highlight"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/title_upload" />
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_height="wrap_content"
+                        android:layout_width="64dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="@color/title"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/lab_cancel"
+                        android:layout_marginStart="20dp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

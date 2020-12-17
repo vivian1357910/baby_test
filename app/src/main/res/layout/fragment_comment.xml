@@ -19,16 +19,27 @@
             android:textColor="@color/title"
             android:textSize="24sp" />
 
+        <EditText
+            android:id="@+id/edt_order_note_text"
+            android:background="@drawable/edittext_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="5dp"
+            android:minLines="5"
+            android:gravity="top"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:hint="留下評論讓大家參考吧！"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:overScrollMode="never"
             tools:listitem="@layout/adapter_comment" />
-
-        <!--    注意修改包名时，这里也需要修改    -->
-
-
-
 
 </LinearLayout>

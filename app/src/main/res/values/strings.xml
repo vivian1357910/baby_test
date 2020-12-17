@@ -106,5 +106,6 @@
     <string name="title_comment">評論</string>
     <string name="title_chat">發送聯絡請求</string>
     <string name="title_house">請求詳細地點</string>
+    <string name="title_upload">上架</string>
 
 </resources>
