@@ -131,15 +131,70 @@
 
         </LinearLayout>
 
-        <!--  中間导航栏 -->
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:background="@color/white"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/menu_personal" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
 
+
+
+                <Button
+                    android:id="@+id/btn_data"
+                    android:layout_height="wrap_content"
+                    android:layout_width="81dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/title"
+                    android:textSize="11sp"
+                    android:drawableTop="@drawable/ic_menu_settings"
+                    android:text="@string/menu_setting" />
+
+                <Button
+                    android:id="@+id/btn_baby"
+                    android:layout_height="wrap_content"
+                    android:layout_width="81dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/title"
+                    android:textSize="11sp"
+                    android:drawableTop="@drawable/ic_menu_baby"
+                    android:text="@string/menu_baby" />
+
+                <Button
+                    android:id="@+id/btn_babysitter"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="81dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/title"
+                    android:textSize="11sp"
+                    android:drawableTop="@drawable/ic_menu_babysitter"
+                    android:text="@string/menu_babysitter" />
+
+                <Button
+                    android:id="@+id/btn_notice"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="81dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/title"
+                    android:textSize="11sp"
+                    android:drawableTop="@drawable/ic_menu_notifications"
+                    android:text="@string/menu_notice" />
+
+                <Button
+                    android:id="@+id/btn_settings"
+                    android:layout_height="wrap_content"
+                    android:layout_width="81dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/highlight"
+                    android:textSize="11sp"
+                    android:drawableTop="@drawable/ic_menu_heart"
+                    android:text="@string/menu_store" />
+
+        </LinearLayout>
 
 
         <TextView

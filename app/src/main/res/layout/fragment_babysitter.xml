@@ -140,30 +140,6 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:singleLine="true"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20sp"
-                    android:text="興趣" />
-
-
-                <EditText
-                    android:id="@+id/et_hobbit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="48dp"
-                    android:inputType="text" />
-
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp">
 
@@ -204,11 +180,11 @@
                     android:singleLine="true"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
-                    android:text="飲食習慣" />
+                    android:text="托育環境" />
 
 
                 <EditText
-                    android:id="@+id/edt_eat"
+                    android:id="@+id/edt_environment"
                     android:background="@drawable/edittext_back"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -234,11 +210,11 @@
                     android:singleLine="true"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
-                    android:text="個性描述" />
+                    android:text="托育人數" />
 
 
                 <EditText
-                    android:id="@+id/edt_personality"
+                    android:id="@+id/edt_number"
                     android:background="@drawable/edittext_back"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -264,11 +240,11 @@
                     android:singleLine="true"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="16sp"
-                    android:text="接送方式" />
+                    android:text="預期薪資" />
 
 
                 <EditText
-                    android:id="@+id/edt_car"
+                    android:id="@+id/edt_money"
                     android:background="@drawable/edittext_back"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -293,12 +269,12 @@
                     android:layout_width="wrap_content"
                     android:singleLine="true"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16sp"
-                    android:text="注意事項" />
+                    android:textSize="20sp"
+                    android:text="資歷" />
 
 
                 <EditText
-                    android:id="@+id/edt_precaution"
+                    android:id="@+id/edt_experience"
                     android:background="@drawable/edittext_back"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -323,8 +299,8 @@
                     android:layout_width="wrap_content"
                     android:singleLine="true"
                     android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16sp"
-                    android:text="其他" />
+                    android:textSize="20sp"
+                    android:text="備註" />
 
 
                 <EditText

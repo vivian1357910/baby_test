@@ -11,7 +11,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical">
 
@@ -42,7 +42,8 @@
                             android:paddingLeft="20dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:paddingStart="20dp">
 
                                 <FrameLayout
                                     android:layout_width="match_parent"
@@ -57,7 +58,7 @@
                                             android:singleLine="true"
                                             android:textColor="@color/colorPrimaryDark"
                                             android:text="@string/title_name"
-                                            android:textSize="16dp"/>
+                                            android:textSize="18dp"/>
 
                                         <TextView
                                             android:id="@+id/tv_name"
@@ -66,7 +67,7 @@
                                             android:layout_marginLeft="48dp"
                                             android:singleLine="true"
                                             android:textColor="@color/colorAccent"
-                                            android:textSize="16dp"
+                                            android:textSize="18dp"
                                             android:text="小明" />
 
                                 </FrameLayout>
@@ -94,6 +95,7 @@
                                             android:gravity="start|center_vertical"
                                             android:textSize="14dp"
                                             android:text="@string/title_chat"
+                                            android:backgroundTint="@color/title"
                                             android:layout_marginLeft="0dp"
                                             android:layout_marginRight="80dp" />
 
@@ -103,6 +105,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_marginLeft="140dp"
                                             android:layout_marginStart="140dp"
+                                            android:backgroundTint="@color/title"
                                             android:textSize="14dp"
                                             android:text="@string/title_house" />
 
@@ -117,180 +120,19 @@
 
         </LinearLayout>
 
-        <LinearLayout
+        <ListView
+            android:id="@+id/lv_need"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp" >
-
-                                <TextView
-                                    android:id="@+id/tv_title_need"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:ellipsize="end"
-                                    android:gravity="start|center_vertical"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="16dp"
-                                    android:text="@string/title_want"
-                                    />
-                                <TextView
-                                    android:id="@+id/tv_need"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:layout_marginLeft="52dp"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorAccent"
-                                    android:textSize="16dp"
-                                    android:text="保母"
-                                    android:layout_marginStart="52dp" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp" >
-
-                                <TextView
-                                    android:id="@+id/tv_title_time"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:ellipsize="end"
-                                    android:gravity="start|center_vertical"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="16dp"
-                                    android:text="@string/title_time"
-                                    />
-                                <TextView
-                                    android:id="@+id/tv_time"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:layout_marginLeft="36dp"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorAccent"
-                                    android:textSize="16dp"
-                                    android:text="2020/11/28 (六) 全天"
-                                    android:layout_marginStart="36dp" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp" >
-
-                                <TextView
-                                    android:id="@+id/tv_title_place"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:ellipsize="end"
-                                    android:gravity="start|center_vertical"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="16dp"
-                                    android:text="@string/title_place" />
-                                <TextView
-                                    android:id="@+id/tv_place"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:layout_marginLeft="36dp"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorAccent"
-                                    android:textSize="16dp"
-                                    android:text="自宅"
-                                    android:layout_marginStart="36dp" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp" >
-
-                                <TextView
-                                    android:id="@+id/tv_title_money"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:ellipsize="end"
-                                    android:gravity="start|center_vertical"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="16dp"
-                                    android:text="@string/title_money" />
-                                <TextView
-                                    android:id="@+id/tv_money"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:layout_marginLeft="36dp"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorAccent"
-                                    android:textSize="16dp"
-                                    android:text="1000/小時"
-                                    android:layout_marginStart="36dp" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp" >
-
-                                <TextView
-                                    android:id="@+id/tv_title_else"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:ellipsize="end"
-                                    android:gravity="start|center_vertical"
-                                    android:singleLine="true"
-                                    android:textColor="@color/colorPrimaryDark"
-                                    android:textSize="16dp"
-                                    android:text="@string/title_else" />
-                                <TextView
-                                    android:id="@+id/tv_else"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="wrap_content"
-                                    android:gravity="left"
-                                    android:layout_marginLeft="36dp"
-                                    android:singleLine="false"
-                                    android:textColor="@color/colorAccent"
-                                    android:textSize="16dp"
-                                    android:text="@string/app_slogan" />
-
-                        </FrameLayout>
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/iv_image_need"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="8dp"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher"
-                    android:layout_marginStart="8dp" />
-
-        </LinearLayout>
+            android:overScrollMode="never"
+            tools:listitem="@layout/adapter_need" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
                 <Button
                     android:id="@+id/btn_baby"

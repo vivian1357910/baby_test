@@ -143,7 +143,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="@string/title_personal_data"
+        android:text="@string/menu_data"
         android:textColor="@color/title"
         android:textSize="24sp" />
 
