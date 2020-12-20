@@ -195,7 +195,7 @@
                         android:textSize="24sp" />
 
                     <EditText
-                        android:id="@+id/edt_order_note_text"
+                        android:id="@+id/edt_else"
                         android:background="@drawable/edittext_back"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

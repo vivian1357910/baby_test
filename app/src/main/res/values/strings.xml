@@ -10,7 +10,7 @@
     <string name="menu_personal">個人</string>
     <string name="menu_need">需求</string>
 
-    <string name="menu_notifications">通知</string>
+    <string name="menu_new">最新</string>
     <string name="menu_issues">問題</string>
     <string name="menu_starred">收藏</string>
     <string name="menu_settings">設定</string>
@@ -104,8 +104,10 @@
 
     <!-- 評論   -->
     <string name="title_comment">評論</string>
-    <string name="title_chat">發送聯絡請求</string>
-    <string name="title_house">請求詳細地點</string>
+    <string name="title_chat">聯絡資訊</string>
+    <string name="title_house">詳細地址</string>
+    <string name="title_my_baby">傳送我的寶寶簡介</string>
+    <string name="title_babysitter">傳送我的簡介</string>
     <string name="title_upload">上架</string>
 
 </resources>
