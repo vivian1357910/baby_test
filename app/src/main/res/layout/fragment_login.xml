@@ -22,7 +22,7 @@
         android:contentDescription="Logo"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/ic_logo_name" />
-
+<!--
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
         android:text="@string/title_login"
         android:textColor="@color/title"
         android:textSize="30sp" />
-
+-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

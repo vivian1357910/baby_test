@@ -240,75 +240,6 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="0dp"
-            android:textSize="16dp"
-            android:text="您是否已閱讀並同意"
-            android:textColor="@color/colorPrimaryDark" />
-
-        <TextView
-            android:id="@+id/tv_user_protocol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:text="用戶協議"
-            android:textColor="@color/highlight" />
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="16dp"
-            android:text="和"
-            android:textColor="@color/title" />
-
-        <TextView
-            android:id="@+id/tv_privacy_protocol"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textSize="16dp"
-            android:text="隱私政策"
-            android:textColor="@color/highlight" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="24dp"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_yes"
-            android:layout_height="wrap_content"
-            android:layout_width="64dp"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:layout_marginTop="16dp"
-            android:text="@string/lab_yes" />
-
-        <Button
-            android:id="@+id/btn_no"
-            android:layout_height="wrap_content"
-            android:layout_width="64dp"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:layout_marginTop="16dp"
-            android:text="@string/lab_no" />
-
-        </LinearLayout>
 
 
 
@@ -318,6 +249,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="64dp"
         android:backgroundTint="@color/title"
         android:textColor="@color/white"
